@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: vc7087
+    provider: github
+    repository: boost-api-aggregation
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: vc7087-boost-api-aggregation
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/vc7087/boost-api-aggregation.git
+  org: vc7087
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: boost-api-aggregation
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/vc7087/boost-api-aggregation
