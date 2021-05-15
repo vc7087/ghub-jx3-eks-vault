@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: bog
+    - name: php-helloworld
     - name: spbog
     scheduler: in-repo
   slack:
