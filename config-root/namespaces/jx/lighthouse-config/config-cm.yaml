@@ -7,7 +7,10 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        vc7087/bog: true
         vc7087/ghub-jx3-eks-vault: true
+        vc7087/php-helloworld: true
+        vc7087/spbog: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -19,7 +22,10 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        vc7087/bog: merge
         vc7087/ghub-jx3-eks-vault: merge
+        vc7087/php-helloworld: merge
+        vc7087/spbog: merge
       queries:
       - labels:
         - approved
@@ -31,6 +37,9 @@ data:
         - needs-rebase
         repos:
         - vc7087/ghub-jx3-eks-vault
+        - vc7087/bog
+        - vc7087/php-helloworld
+        - vc7087/spbog
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +50,9 @@ data:
         - needs-rebase
         repos:
         - vc7087/ghub-jx3-eks-vault
+        - vc7087/bog
+        - vc7087/php-helloworld
+        - vc7087/spbog
       target_url: http://dashboard-jx.boostorium.com
 kind: ConfigMap
 metadata:

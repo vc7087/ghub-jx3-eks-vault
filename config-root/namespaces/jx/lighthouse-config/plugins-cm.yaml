@@ -6,6 +6,18 @@ data:
       repos:
       - vc7087/ghub-jx3-eks-vault
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - vc7087/bog
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - vc7087/php-helloworld
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - vc7087/spbog
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,7 +28,16 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      vc7087/bog:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       vc7087/ghub-jx3-eks-vault:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      vc7087/php-helloworld:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      vc7087/spbog:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -24,8 +45,56 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      vc7087/bog:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       vc7087/ghub-jx3-eks-vault:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      vc7087/php-helloworld:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      vc7087/spbog:
       - approve
       - assign
       - blunderbuss
@@ -53,6 +122,17 @@ data:
     - repos:
       - vc7087/ghub-jx3-eks-vault
       trusted_org: todo
+    - repos:
+      - vc7087/bog
+      trusted_org: todo
+    - repos:
+      - vc7087/php-helloworld
+      trusted_org: todo
+    - repos:
+      - vc7087/spbog
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

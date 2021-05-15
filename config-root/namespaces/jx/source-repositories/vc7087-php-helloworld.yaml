@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: vc7087
+    provider: github
+    repository: php-helloworld
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: vc7087-php-helloworld
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/vc7087/php-helloworld.git
+  org: vc7087
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: php-helloworld
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/vc7087/php-helloworld
