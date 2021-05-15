@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: bog
+    - name: spbog
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
