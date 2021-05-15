@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: bog
+    - name: boost-api-aggregation
     - name: php-helloworld
     - name: spbog
     scheduler: in-repo

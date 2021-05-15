@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - vc7087/boost-api-aggregation
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - vc7087/php-helloworld
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -31,6 +35,9 @@ data:
       vc7087/bog:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      vc7087/boost-api-aggregation:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       vc7087/ghub-jx3-eks-vault:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -46,6 +53,22 @@ data:
     owners: {}
     plugins:
       vc7087/bog:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      vc7087/boost-api-aggregation:
       - approve
       - assign
       - blunderbuss
@@ -124,6 +147,9 @@ data:
       trusted_org: todo
     - repos:
       - vc7087/bog
+      trusted_org: todo
+    - repos:
+      - vc7087/boost-api-aggregation
       trusted_org: todo
     - repos:
       - vc7087/php-helloworld

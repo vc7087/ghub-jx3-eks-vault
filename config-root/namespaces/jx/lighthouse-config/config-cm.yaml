@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         vc7087/bog: true
+        vc7087/boost-api-aggregation: true
         vc7087/ghub-jx3-eks-vault: true
         vc7087/php-helloworld: true
         vc7087/spbog: true
@@ -23,6 +24,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         vc7087/bog: merge
+        vc7087/boost-api-aggregation: merge
         vc7087/ghub-jx3-eks-vault: merge
         vc7087/php-helloworld: merge
         vc7087/spbog: merge
@@ -38,6 +40,7 @@ data:
         repos:
         - vc7087/ghub-jx3-eks-vault
         - vc7087/bog
+        - vc7087/boost-api-aggregation
         - vc7087/php-helloworld
         - vc7087/spbog
       - labels:
@@ -51,6 +54,7 @@ data:
         repos:
         - vc7087/ghub-jx3-eks-vault
         - vc7087/bog
+        - vc7087/boost-api-aggregation
         - vc7087/php-helloworld
         - vc7087/spbog
       target_url: http://dashboard-jx.boostorium.com
