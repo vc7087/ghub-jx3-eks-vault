@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.boostorium.com/
+releases:
+- chart: dev/php-helloworld
+  version: 0.0.1
+  name: jx-php-helloworld
+templates: {}
+renderedvalues: {}
