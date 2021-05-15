@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: vc7087
+    provider: github
+    repository: spbog
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: vc7087-spbog
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/vc7087/spbog.git
+  org: vc7087
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spbog
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/vc7087/spbog
